@@ -3,6 +3,7 @@ import './App.css';
 import axios from "axios";
 
 
+
 const Form = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -17,19 +18,19 @@ const Form = () => {
       message: message
     };
 
-    axios.post('/api/form', formData)
+    axios.post('http://localhost:4000/api/form', formData)
       .then(response => {
-        console.log("Form data saved successfully");
+        console.log("[Form]Form data saved successfully");
         // Clear form fields
         setName('');
         setEmail('');
         setMessage('');
       })
       .catch(error => {
-        console.error("Error saving form data:", error);
+        console.error("[Form]Error saving form data:", error);
       });
 
-    console.log("The user submitted the form with the following data:");
+    console.log("[Form]The user submitted the form with the following data:");
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Message:", message);
