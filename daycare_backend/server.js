@@ -18,6 +18,15 @@ app.get('/api/users', userController.getUsers);
 
 app.post('/api/users', userController.createUser); // Add new user endpoint
 
+// GET /api/users/:id - Retrieve a specific user
+// app.get('/api/users/:id', userController.getUserById);
+
+// PUT /api/users/:id - Update a specific user
+app.put('/api/users/:id', userController.updateUser);
+
+// DELETE /api/users/:id - Delete a specific user
+app.delete('/api/users/:id', userController.deleteUser);
+
 
 // Define your API endpoints here
 app.post('/api/form', (req, res) => {

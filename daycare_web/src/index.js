@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './Form';
 import reportWebVitals from './reportWebVitals';
-import Form from "./Form";
+import UserForm from "./cmp/UserForm";
 // import ReactDOM from "react-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Form />
+    <UserForm />
   </React.StrictMode>
 );
 //
