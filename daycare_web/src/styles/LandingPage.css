@@ -1,0 +1,58 @@
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--transparent-primary);
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.landing-page-title {
+  font-size: 48px;
+  font-family: 'Sister Love', 'Rolling Love';
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-image {
+  max-width: 100vh;
+  height: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-tertiary);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .landing-page-title {
+    font-size: 36px;
+  }
+}

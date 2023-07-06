@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Layout from './Layout';
+
 
 const UserForm = () => {
   const [formData, setFormData] = useState({
@@ -34,83 +36,85 @@ const UserForm = () => {
   };
 
   return (
-    <form className="Form" onSubmit={handleSubmit}>
-      <div className="FormContainer">
-        <div className="FormField">
-          <label className="FormFieldLabel" htmlFor="name">
-            Name:
-          </label>
-          <input
-            className="FormFieldInput"
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
+    <Layout>
+      <form className="Form" onSubmit={handleSubmit}>
+        <div className="FormContainer">
+          <div className="FormField">
+            <label className="FormFieldLabel" htmlFor="name">
+              Name:
+            </label>
+            <input
+              className="FormFieldInput"
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="FormField">
-          <label className="FormFieldLabel" htmlFor="email">
-            Email:
-          </label>
-          <input
-            className="FormFieldInput"
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
+          <div className="FormField">
+            <label className="FormFieldLabel" htmlFor="email">
+              Email:
+            </label>
+            <input
+              className="FormFieldInput"
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="FormField">
-          <label className="FormFieldLabel" htmlFor="address">
-            Address:
-          </label>
-          <input
-            className="FormFieldInput"
-            type="text"
-            id="address"
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-          />
-        </div>
+          <div className="FormField">
+            <label className="FormFieldLabel" htmlFor="address">
+              Address:
+            </label>
+            <input
+              className="FormFieldInput"
+              type="text"
+              id="address"
+              name="address"
+              value={formData.address}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="FormField">
-          <label className="FormFieldLabel" htmlFor="phoneNumber">
-            Phone Number:
-          </label>
-          <input
-            className="FormFieldInput"
-            type="text"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-          />
-        </div>
+          <div className="FormField">
+            <label className="FormFieldLabel" htmlFor="phoneNumber">
+              Phone Number:
+            </label>
+            <input
+              className="FormFieldInput"
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="FormField">
-          <label className="FormFieldLabel" htmlFor="dateOfBirth">
-            Date of Birth:
-          </label>
-          <input
-            className="FormFieldInput"
-            type="date"
-            id="dateOfBirth"
-            name="dateOfBirth"
-            value={formData.dateOfBirth}
-            onChange={handleChange}
-          />
-        </div>
+          <div className="FormField">
+            <label className="FormFieldLabel" htmlFor="dateOfBirth">
+              Date of Birth:
+            </label>
+            <input
+              className="FormFieldInput"
+              type="date"
+              id="dateOfBirth"
+              name="dateOfBirth"
+              value={formData.dateOfBirth}
+              onChange={handleChange}
+            />
+          </div>
 
-        <button className="FormSubmitButton" type="submit">
-          Submit
-        </button>
-      </div>
-    </form>
+          <button className="FormSubmitButton" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </Layout>
   );
 };
 

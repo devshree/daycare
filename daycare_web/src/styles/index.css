@@ -59,3 +59,15 @@ code {
 .FormSubmitButton:hover {
   background-color: #45a049;
 }
+
+
+/* src/styles/index.css */
+
+
+
+/* Animated GIFs */
+.gif {
+  width: 100%;
+  max-width: 400px;
+}
+

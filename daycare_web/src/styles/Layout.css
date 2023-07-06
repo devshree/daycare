@@ -1,0 +1,35 @@
+/* Common CSS */
+@font-face {
+    font-family: 'Rolling-Love';
+    src:url('../fonts/Rolling-Love.ttf.woff') format('woff'),
+        url('../fonts/Rolling-Love.ttf.svg#Rolling-Love') format('svg'),
+        url('../fonts/Rolling-Love.ttf.eot'),
+        url('../fonts/Rolling-Love.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../media/heart.png');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.banner-image{
+
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
